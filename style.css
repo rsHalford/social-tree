@@ -23,35 +23,153 @@ body {
 
 .container {
   min-height: 100vh;
+  padding: 5vw 10vw;
+}
+
+.card {
+  width: 70vw;
+  background-color: #191919;
   margin: auto;
-  padding: 3rem;
+  padding: 3vw;
+  border-radius: 4vw;
+  box-shadow: 0 1vw 0 #080808;
 }
 
 .profile img {
   border-radius: 50%;
-  max-width: 100px;
-  margin: 1rem;
+  width: 20vw;
+  height: 20vw;
+  margin-top: 3vw;
+  object-fit: cover;
 }
 
 h1 {
-  font-size: 6vw;
+  font-size: 3.5vw;
+  margin-top: 2vw;
 }
 
-.links {
-  margin: auto;
-}
-
-a {
-  display: block;
-  max-width: 8rem;
-  color: #ffffff;
-  background-color: #303030;
+.btn {
+  display: inline-block;
+  height: 7vw;
+  width: 45vw;
+  margin: 4vw auto 3vw;
+  padding: 1vw 5vw 0;
+  border-radius: 1vw;
   text-decoration: none;
-  margin: 2rem auto;
-  padding: 0.4rem 0.8rem;
-  border-radius: 0.3rem;
+  transition: all 0.1s linear 0s;
+  position: relative;
+  top: 0;
+  box-shadow: 0 1vw 0 #121212;
 }
 
-a:hover {
+.btn:hover {
+  top: 0.5vw;
+  box-shadow: 0 0.5vw 0 #121212;
+  background-color: #303030;
+  cursor: pointer;
+}
+
+.btn:hover::after {
+  top: 0.1667vw;
+  width: 0.667vw;
+  height: 0.667vw;
+}
+
+.btn::before {
+  transition: all 0.02s linear 0s;
+  content: '';
+  position: absolute;
+  bottom: -1vw;
+  width: 0.667vw;
+  height: 0.667vw;
+  background-color: #121212;
+  z-index: -1;
+}
+
+.btn::after {
+  transition: all 0.02s linear 0s;
+  content: '';
+  position: absolute;
+  top: 0.334vw;
+  width: 1.334vw;
+  height: 1.334vw;
+  background-color: #121212;
+  z-index: -1;
+}
+
+a.btn {
+  position: relative;
+}
+
+a:active.btn {
+  top: 1vw;
+  box-shadow: none;
+}
+
+a:active.btn:before {
+  bottom: 0.1667vw;
+}
+
+a:active.btn:after {
+  top: 0.1667vw;
+}
+
+.twitter {
+  background-color: #1da1f2;
+}
+
+.twitter:hover {
+  background-color: #0090df;
+}
+
+.linkedin {
+  background-color: #0077b5;
+}
+
+.linkedin:hover {
+  background-color: #006ba8;
+}
+
+.github, .email {
+  background-color: #323232;
+}
+
+.github:hover, .email:hover {
+  background-color: #2d2d2d;
+}
+
+.portfolio {
   background-color: #B71C1C;
+}
+
+.portfolio:hover {
+  background-color: #aa0613;
+}
+
+.blog {
+  background-color: #4f3cc4;
+}
+
+.blog:hover {
+  background-color: #4333ba;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "text img";
+}
+
+.content > h2 {
+  grid-area: text;
+  color: #ffffff;
+  font-size: 3.5vw;
+  justify-self: start;
+}
+
+.content > img {
+  grid-area: img;
+  margin: auto 0;
+  width: 4vw;
+  justify-self: end;
 }
