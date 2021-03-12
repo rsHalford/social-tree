@@ -28,11 +28,11 @@ body {
 
 .card {
   width: 70vw;
-  background-color: #191919;
+  background-color: #202020;
   margin: auto;
   padding: 3vw;
   border-radius: 4vw;
-  box-shadow: 0 1vw 0 #080808;
+  box-shadow: 0 1vw 0 #010101;
 }
 
 .profile img {
@@ -59,12 +59,10 @@ h1 {
   transition: all 0.1s linear 0s;
   position: relative;
   top: 0;
-  box-shadow: 0 1vw 0 #121212;
 }
 
 .btn:hover {
   top: 0.5vw;
-  box-shadow: 0 0.5vw 0 #121212;
   background-color: #303030;
   cursor: pointer;
 }
@@ -116,42 +114,52 @@ a:active.btn:after {
 
 .twitter {
   background-color: #1da1f2;
+  box-shadow: 0 1vw 0 #00114d;
 }
 
 .twitter:hover {
   background-color: #0090df;
+  box-shadow: 0 0.5vw 0 #00114d;
 }
 
 .linkedin {
   background-color: #0077b5;
+  box-shadow: 0 1vw 0 #000e3f;
 }
 
 .linkedin:hover {
   background-color: #006ba8;
+  box-shadow: 0 0.5vw 0 #000e3f;
 }
 
 .github, .email {
   background-color: #323232;
+  box-shadow: 0 1vw 0 #020202;
 }
 
 .github:hover, .email:hover {
   background-color: #2d2d2d;
+  box-shadow: 0 0.5vw 0 #020202;
 }
 
 .portfolio {
   background-color: #B71C1C;
+  box-shadow: 0 1vw 0 #4a0000;
 }
 
 .portfolio:hover {
   background-color: #aa0613;
+  box-shadow: 0 0.5vw 0 #4a0000;
 }
 
 .blog {
   background-color: #4f3cc4;
+  box-shadow: 0 1vw 0 #000066;
 }
 
 .blog:hover {
   background-color: #4333ba;
+  box-shadow: 0 0.5vw 0 #000066;
 }
 
 .content {
