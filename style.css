@@ -12,49 +12,66 @@ body {
   width: 100vw;
   padding: 0;
   margin: 0;
-  font-size: 16px;
   text-align: center;
+  letter-spacing: min(0.2vw, 1.5px);
   z-index: 0;
   font-family: "Noto Sans", sans-serif;
   scroll-behavior: smooth;
   background-color: #121212;
   color: #ffffff;
+  overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #404040;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #505050;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #606060;
 }
 
 .container {
   min-height: 100vh;
-  padding: 5vw 10vw;
+  padding: min(5vw, 37.5px);
 }
 
 .card {
-  width: 70vw;
+  width: min(90vw, 675px);
   background-color: #202020;
   margin: auto;
-  padding: 3vw;
-  border-radius: 4vw;
-  box-shadow: 0 1vw 0 #010101;
+  padding: min(4vw, 30px);
+  border-radius: min(4vw, 30px);
+  box-shadow: 0 min(2vw, 15px) 0 #010101;
 }
 
 .profile img {
   border-radius: 50%;
-  width: 20vw;
-  height: 20vw;
-  margin-top: 3vw;
+  width: min(30vw, 225px);
+  height: min(30vw, 225px);
+  margin-top: min(4vw, 30px);
   object-fit: cover;
 }
 
 h1 {
-  font-size: 3.5vw;
-  margin-top: 2vw;
+  font-size: min(5.5vw, 41.25px);
+  margin: min(4vw, 30px) 0 min(4vw, 30px);
 }
 
 .btn {
   display: inline-block;
-  height: 7vw;
-  width: 45vw;
-  margin: 4vw auto 3vw;
-  padding: 1vw 5vw 0;
-  border-radius: 1vw;
+  height: min(10vw, 75px);
+  width: min(65vw, 487.5px);
+  margin: min(3vw, 22.5px) auto min(4vw, 30px);
+  padding: min(1.2vw, 9px) min(5vw, 37.5px) 0;
+  border-radius: min(1vw, 7.5px);
   text-decoration: none;
   transition: all 0.1s linear 0s;
   position: relative;
@@ -62,24 +79,24 @@ h1 {
 }
 
 .btn:hover {
-  top: 0.5vw;
+  top: min(0.5vw, 3.75px);
   background-color: #303030;
   cursor: pointer;
 }
 
 .btn:hover::after {
-  top: 0.1667vw;
-  width: 0.667vw;
-  height: 0.667vw;
+  top: min(0.1667vw, 1.25025px);
+  width: min(0.667vw, 5.0025px);
+  height: min(0.667vw, 5.0025px);
 }
 
 .btn::before {
   transition: all 0.02s linear 0s;
   content: '';
   position: absolute;
-  bottom: -1vw;
-  width: 0.667vw;
-  height: 0.667vw;
+  bottom: min(-1vw, -7.5px);
+  width: min(0.667vw, 5.0025px);
+  height: min(0.667vw, 5.0025px);
   background-color: #121212;
   z-index: -1;
 }
@@ -88,9 +105,9 @@ h1 {
   transition: all 0.02s linear 0s;
   content: '';
   position: absolute;
-  top: 0.334vw;
-  width: 1.334vw;
-  height: 1.334vw;
+  top: min(0.334vw, 2.505px);
+  width: min(1.334vw, 10.005px);
+  height: min(1.334vw, 10.005px);
   background-color: #121212;
   z-index: -1;
 }
@@ -100,66 +117,66 @@ a.btn {
 }
 
 a:active.btn {
-  top: 1vw;
+  top: min(1vw, 7.5px);
   box-shadow: none;
 }
 
 a:active.btn:before {
-  bottom: 0.1667vw;
+  bottom: min(0.1667vw, 1.25025px);
 }
 
 a:active.btn:after {
-  top: 0.1667vw;
+  top: min(0.1667vw, 1.25025px);
 }
 
 .twitter {
   background-color: #1da1f2;
-  box-shadow: 0 1vw 0 #00114d;
+  box-shadow: 0 min(1vw, 7.5px) 0 #00114d;
 }
 
 .twitter:hover {
   background-color: #0090df;
-  box-shadow: 0 0.5vw 0 #00114d;
+  box-shadow: 0 min(0.5vw, 3.75px) 0 #00114d;
 }
 
 .linkedin {
   background-color: #0077b5;
-  box-shadow: 0 1vw 0 #000e3f;
+  box-shadow: 0 min(1vw, 7.5px) 0 #000e3f;
 }
 
 .linkedin:hover {
   background-color: #006ba8;
-  box-shadow: 0 0.5vw 0 #000e3f;
+  box-shadow: 0 min(0.5vw, 3.75px) 0 #000e3f;
 }
 
 .github, .email {
   background-color: #323232;
-  box-shadow: 0 1vw 0 #020202;
+  box-shadow: 0 min(1vw, 7.5px) 0 #020202;
 }
 
 .github:hover, .email:hover {
   background-color: #2d2d2d;
-  box-shadow: 0 0.5vw 0 #020202;
+  box-shadow: 0 min(0.5vw, 3.75px) 0 #020202;
 }
 
 .portfolio {
   background-color: #B71C1C;
-  box-shadow: 0 1vw 0 #4a0000;
+  box-shadow: 0 min(1vw, 7.5px) 0 #4a0000;
 }
 
 .portfolio:hover {
   background-color: #aa0613;
-  box-shadow: 0 0.5vw 0 #4a0000;
+  box-shadow: 0 min(0.5vw, 3.75px) 0 #4a0000;
 }
 
 .blog {
   background-color: #4f3cc4;
-  box-shadow: 0 1vw 0 #000066;
+  box-shadow: 0 min(1vw, 7.5px) 0 #000066;
 }
 
 .blog:hover {
   background-color: #4333ba;
-  box-shadow: 0 0.5vw 0 #000066;
+  box-shadow: 0 min(0.5vw, 3.75px) 0 #000066;
 }
 
 .content {
@@ -171,13 +188,13 @@ a:active.btn:after {
 .content > h2 {
   grid-area: text;
   color: #ffffff;
-  font-size: 3.5vw;
+  font-size: min(5.5vw, 41.25px);
   justify-self: start;
 }
 
 .content > img {
   grid-area: img;
   margin: auto 0;
-  width: 4vw;
+  width: min(6.5vw, 48.75px);
   justify-self: end;
 }
