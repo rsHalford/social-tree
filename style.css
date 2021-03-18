@@ -198,3 +198,17 @@ a:active.btn:after {
   width: min(6.5vw, 48.75px);
   justify-self: end;
 }
+
+footer {
+  margin-top: min(6.5vw, 48.75px);
+  font-size: min(3.2vw, 24px);
+}
+
+footer > a {
+  text-decoration: none;
+  color: #909090;
+}
+
+footer > a:hover {
+  border-bottom: min(1.333vw, 1px) dotted #909090;
+}
