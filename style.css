@@ -129,6 +129,16 @@ a:active.btn:after {
   top: min(0.1667vw, 1.25025px);
 }
 
+.blog {
+  background-color: #cc241d;
+  box-shadow: 0 min(1vw, 7.5px) 0 #4e0000;
+}
+
+.blog:hover {
+  background-color: #bd0e12;
+  box-shadow: 0 min(0.5vw, 3.75px) 0 #4e0000;
+}
+
 .twitter {
   background-color: #1da1f2;
   box-shadow: 0 min(1vw, 7.5px) 0 #00114d;
@@ -167,16 +177,6 @@ a:active.btn:after {
 .portfolio:hover {
   background-color: #aa0613;
   box-shadow: 0 min(0.5vw, 3.75px) 0 #4a0000;
-}
-
-.blog {
-  background-color: #4f3cc4;
-  box-shadow: 0 min(1vw, 7.5px) 0 #000066;
-}
-
-.blog:hover {
-  background-color: #4333ba;
-  box-shadow: 0 min(0.5vw, 3.75px) 0 #000066;
 }
 
 .content {
