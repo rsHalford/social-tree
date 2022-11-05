@@ -149,16 +149,6 @@ a:active.btn:after {
   box-shadow: 0 min(0.5vw, 3.75px) 0 #00114d;
 }
 
-.linkedin {
-  background-color: #0077b5;
-  box-shadow: 0 min(1vw, 7.5px) 0 #000e3f;
-}
-
-.linkedin:hover {
-  background-color: #006ba8;
-  box-shadow: 0 min(0.5vw, 3.75px) 0 #000e3f;
-}
-
 .github, .email {
   background-color: #323232;
   box-shadow: 0 min(1vw, 7.5px) 0 #020202;
@@ -177,6 +167,16 @@ a:active.btn:after {
 .portfolio:hover {
   background-color: #aa0613;
   box-shadow: 0 min(0.5vw, 3.75px) 0 #4a0000;
+}
+
+.linkedin {
+  background-color: #0077b5;
+  box-shadow: 0 min(1vw, 7.5px) 0 #000e3f;
+}
+
+.linkedin:hover {
+  background-color: #006ba8;
+  box-shadow: 0 min(0.5vw, 3.75px) 0 #000e3f;
 }
 
 .content {
