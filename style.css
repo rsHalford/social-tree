@@ -139,6 +139,16 @@ a:active.btn:after {
   box-shadow: 0 min(0.5vw, 3.75px) 0 #4e0000;
 }
 
+.mastodon {
+  background-color: #563acc;
+  box-shadow: 0 min(1vw, 7.5px) 0 #17063b;
+}
+
+.mastodon:hover {
+  background-color: #4d32c1;
+  box-shadow: 0 min(0.5vw, 3.75px) 0 #17063b;
+}
+
 .twitter {
   background-color: #1da1f2;
   box-shadow: 0 min(1vw, 7.5px) 0 #00114d;
